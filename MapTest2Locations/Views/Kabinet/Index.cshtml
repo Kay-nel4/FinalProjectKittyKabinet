@@ -1,0 +1,24 @@
+@model IEnumerable<Kabinet>
+
+<h2>Kabinet Locations</h2>
+<table class="table">
+    <tr>
+        <th>Kabinet Number</th>
+        <th>Kabinet Location</th>
+        <th>Dry Food</th>
+        <th>Canned Food</th>
+        <th>Treats</th>
+    </tr>
+
+    @foreach (var kabinet in @Model)
+    {
+        <tr>
+            <td><a href=/Kabinet/ViewKabinet/@kabinet.KabinetNumber>@kabinet.KabinetNumber</a></td>
+            <td>@kabinet.kabinetlocation</td>
+            <td>@kabinet.DryFood</td>
+            <td>@kabinet.CannedFood</td>
+            <td>@kabinet.Treats</td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,19 @@
+@model Kabinet
+
+<h2>Update @Model.kabinetlocation</h2>
+
+@using (Html.BeginForm("UpdateKabinetToDatabase", "Kabinet", "Post"))
+{
+    <input asp-for="KabinetNumber" type="hidden" value="@Model.KabinetNumber" />
+
+    <label asp-for="DryFood" class="control-label">Dry Food</label>
+    <input type="number" step="1" name="DryFood" class="form-control" value="@Model.DryFood" />
+
+    <label asp-for="CannedFood" class="control-label">Canned Food</label>    
+    <input type="number" step="1" name="CannedFood" class="form-control" value="@Model.CannedFood" />
+    
+    <label asp-for="Treats" class="control-label">Treats</label>    
+    <input type="number" step="1" name="Treats" class="form-control" value="@Model.Treats" />
+
+    <input type="submit" value="Update Kabinet" class="btn btn-primary" />
+}

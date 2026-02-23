@@ -1,0 +1,24 @@
+@model Kabinet
+
+<h3>@Model.kabinetlocation Information</h3>
+
+<table class="table">
+    <tr>
+        <th>Kabinet Number</th>
+        <th>Kabinet Location</th>
+        <th>Dry Food</th>
+        <th>Canned Food</th>
+        <th>Treats</th>
+    </tr>
+    <tr>
+        <td>@Model.KabinetNumber</td>
+        <td>@Model.kabinetlocation</td>
+        <td>@Model.DryFood</td>
+        <td>@Model.CannedFood</td>
+        <td>@Model.Treats</td>
+    </tr>
+</table>
+
+<div style="display: block">
+    <a href="/Kabinet/UpdateKabinet/@Model.KabinetNumber">Update Kabinet?</a>
+</div>

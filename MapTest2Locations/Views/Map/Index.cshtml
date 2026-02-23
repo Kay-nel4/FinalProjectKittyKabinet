@@ -1,0 +1,49 @@
+@model List<MapLocation>
+
+@{
+    ViewData["Title"] = "Map Test 2";
+}
+
+<style>
+    #map {
+        height: 500px;
+        width: 100%;
+    }
+</style>
+
+<div id="map"></div>
+
+@section Scripts {
+    <script>
+    const locations = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model));
+</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // 1. Create the map and set the starting view
+            var map = L.map('map').setView([29.6516, -82.3248], 12);
+
+            // 2. Add the OpenStreetMap tiles
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19
+            }).addTo(map);
+
+            locations.forEach(loc => {
+                const marker = L.marker([loc.Latitude, loc.Longitude]).addTo(map);
+                marker.bindTooltip(loc.kabinetlocation,{
+                    permanent: false,
+                    direction: "top"
+                });
+                marker.on("click", function() {
+                    window.location.href = `/Kabinet/ViewKabinet?id=${encodeURIComponent(loc.KabinetNumber)}`
+                });
+
+            });
+         
+        });
+    </script>
+}
+
+
+
+
