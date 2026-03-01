@@ -1,5 +1,6 @@
 using System.Data;
 using MapTest2Locations.Data;
+using MapTest2Locations.MessageBoardData;
 using MySql.Data.MySqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,7 @@ builder.Services.AddScoped<IDbConnection>((s) =>
 });
 
 builder.Services.AddTransient<IKabinetRepository, KabinetRepository>();
+builder.Services.AddTransient<IMessageBoardRepository, MessageBoardRepository>();
 
 var app = builder.Build();
 
