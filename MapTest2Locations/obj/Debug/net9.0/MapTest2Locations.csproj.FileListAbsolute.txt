@@ -116,4 +116,4 @@ C:\Users\kayne\Desktop\repos\MapTest2Locations\MapTest2Locations\obj\Debug\net9.
 C:\Users\kayne\Desktop\repos\MapTest2Locations\MapTest2Locations\obj\Debug\net9.0\compressed\5y8g8u0qdw-w5ysr9m1r3.gz
 C:\Users\kayne\Desktop\repos\MapTest2Locations\MapTest2Locations\obj\Debug\net9.0\MapTest2Locations.sourcelink.json
 C:\Users\kayne\Desktop\repos\MapTest2Locations\MapTest2Locations\bin\Debug\net9.0\wwwroot\css\Fonts\Fonts
-C:\Users\kayne\Desktop\repos\MapTest2Locations\MapTest2Locations\obj\Debug\net9.0\compressed\zbpxi67t36-jnvlouixi4.gz
+C:\Users\kayne\Desktop\repos\MapTest2Locations\MapTest2Locations\obj\Debug\net9.0\compressed\zbpxi67t36-k1484nkcj9.gz

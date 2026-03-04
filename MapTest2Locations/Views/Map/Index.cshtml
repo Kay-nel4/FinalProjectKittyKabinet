@@ -32,19 +32,44 @@
             }).addTo(map);
 
             locations.forEach(loc => {
-                const marker = L.marker([loc.Latitude, loc.Longitude]).addTo(map);
-                marker.bindTooltip(loc.kabinetlocation,{
+
+                const marker = L.marker([loc.Latitude, loc.Longitude], {
+                    icon: L.divIcon({
+                        className: 'kabinet-marker',
+                        html: `<div class="kabinet-number">${loc.KabinetNumber}</div>`,
+                        iconSize: [30, 30],
+                        iconAnchor: [15, 30]
+                    })
+                }).addTo(map);
+
+                marker.bindTooltip(loc.kabinetlocation, {
                     permanent: false,
                     direction: "top"
                 });
-                marker.on("click", function() {
+
+                marker.on("click", function () {
                     window.location.href = `/Kabinet/ViewKabinet?id=${encodeURIComponent(loc.KabinetNumber)}`
                 });
-
             });
-         
+
         });
     </script>
+    <style> .kabinet-marker {
+  background-color: lightslategray;
+  color: antiquewhite;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  border: 2px solid white;
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+  .kabinet-number {
+    width: 20px;
+    height: 20px;
+  }
+</style>
 }
 
 

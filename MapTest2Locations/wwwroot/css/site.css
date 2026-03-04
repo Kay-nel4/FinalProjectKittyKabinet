@@ -26,6 +26,23 @@ font-face {
   body {
     font-family: "Nunito", sans-serif;
   }
+  
+<style> .kabinet-marker {
+  background-color: #ff6f61;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  border: 2px solid white;
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+  .kabinet-number {
+    width: 30px;
+    height: 30px;
+  }
+</style>
 
 < style > . Kabinet-Image {
 display: flex;
