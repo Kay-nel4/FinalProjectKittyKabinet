@@ -10,8 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/MapTest2Locations.styles.css" asp-append-version="true"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+    body {
+    background-color:lightgray;
+    }
+</style>
 </head>
 <body>
 <header>
@@ -37,7 +45,7 @@
                         <a class="nav-link text-dark" asp-area="" asp-controller="MessageBoard" asp-action="Index">Kommunity</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Resources">Resources</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Resources">Resources</a>
                     </li>
                 </ul>
             </div>

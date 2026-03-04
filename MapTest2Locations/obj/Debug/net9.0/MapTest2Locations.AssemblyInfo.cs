@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MapTest2Locations")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abf3a16adc6730d1c1e4a044f7a3de1c1b9cbccf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e37bcd11f1f9db22ab7a8c248780345bb164ac8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MapTest2Locations")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MapTest2Locations")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
